@@ -27,7 +27,7 @@ app.post("/create_preference", (req, res) => {
     },
     auto_return: "approved",
     shipments: {
-      cost: req.body.shipment_cost,
+      cost: +req.body.shipment_cost,
       mode: "not_specified",
     },
   };
